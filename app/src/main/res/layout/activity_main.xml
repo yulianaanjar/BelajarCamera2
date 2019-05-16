@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <!--//ImageView adalah salah satu widget yang terdapat di Android dengan user interface berupa penampil gambar
+       //android:id="@+id/imageView" digunakan ntuk mengatur gambar lewat file java. Simbol "at" (@) pada awal string
+        menunjukkan parser XML harus mengurai dan memperluas ID string selebihnya dan mengenalinya sebagai ID
+        sumber daya. Simbol tanda tambah (+) berarti ini nama sumber daya baru yang harus dibuat dan ditambahkan
+        ke sumber daya kita (dalam file R.java).
+      //android:layout_width="match_parent" disini yaitu mengatur lebar layout yaitu dengan menggunakan match-parent
+       adalah memberi tahu tampilan Anda agar menjadi sebesar yang akan diperbolehkan oleh kelompok tampilan induknya.
+      //android:layout_height="208dp" disini adalah bertujuan mengatur tinggi layout
+      //app:srcCompat="@android:drawable/ic_lock_lock" /> adalah untuk memberikan images
+-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Coba Kamera" />
+
+    <!-- //Button adalah perangkat user interface pada Android yang berupa tombol. Button merupakan salah satu hal wajib pada aplikasi Android. 
+        //Pada code tersebut ada atribut android:id=“@+id/button”. Atribut inilah yang dipakai untuk mengenali Button satu dengan lainnya.
+            Button tersebut memiliki id yang bernama button.
+       // android:background="@color/colorAccent" adalah memberi warna pada button tersebut.
+      // android:text="Coba Kamera" /> adalah untuk memberikan tulisan pada button tersebut.
+-->
+</LinearLayout>
